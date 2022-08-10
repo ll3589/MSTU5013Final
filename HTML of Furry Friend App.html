@@ -1,0 +1,22 @@
+HTML of Furry Friend App
+
+<div id="app">
+	<h1>Meet Lisa's Furry Friends!</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-3 new">
+        <h3>Introdoce Lisa More Furry Friends!</h3>
+        <form @submit.prevent>
+          <input type="text" placeholder="name"  class="form-control" v-model="newName"> 
+          <input type="text" placeholder="type of animal"  class="form-control" v-model="newType">
+          <input type="text" placeholder="picture url here" class="form-control" v-model="newPic">
+          <br>
+          <button type="submit" type="button" class="btn btn-light submit" @click="createNew">Submit</button>
+        </form>
+      </div>
+      <div class="col-9">
+       <profile v-for="animal in animals" :animal="animal"></profile>
+      </div>
+    </div>
+  </div>
+</div>
