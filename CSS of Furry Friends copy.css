@@ -1,0 +1,92 @@
+CSS of Furry Friends
+/* used css cheatsheet to auto generate the overalll background color*/
+#app{
+    background: #FFF7E6;
+    background: -moz-linear-gradient(left, #FFF7E6 0%, #FFFEEF 50%, #FBF6C8 100%);
+    background: -webkit-linear-gradient(left, #FFF7E6 0%, #FFFEEF 50%, #FBF6C8 100%);
+    background: linear-gradient(to right, #FFF7E6 0%, #FFFEEF 50%, #FBF6C8 100%);
+    }
+    
+    h1{
+      text-align: center; 
+      margin-bottom: 3rem;
+      font-family: "Arial Black", Gadget, sans-serif;
+      color:#A0816C;
+    }
+    
+    h3{
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: #565656;
+    font-size: 20px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-align: center;
+    margin-top:1em;
+    margin-bottom: 2em;
+    }
+    /*again, styling from the almighty css cheatsheet*/
+    p{
+      font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #4C4C4C;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    }
+    input{
+      margin-bottom: 2rem;
+    }
+    .submit{
+      margin-left:5.45em;
+      display:flex;
+      justify-content:center;
+      text-align:center;
+      margin-bottom:1rem;
+    }
+    .new{
+      background-color: #D1C0A8;
+      border-right: solid #E8DED1;
+      border-radius: 3%
+    }
+    
+    .profile{
+      border: 2px solid #D1C0A8;
+        padding: 0.5em 1em;
+        border-radius: 0.5em;
+        margin-bottom: 1em;
+      width:40%;
+      margin: 1rem;
+      vertical-align: top;
+      display: inline-block;
+    }
+    p{
+      margin-bottom:-2px;
+      margin-top: 1rem;
+      text-align:center;
+    }
+    .like, .bye{
+      margin-top: 1rem;
+      margin-left: 1rem;
+      align-content: center;
+      
+    }
+    img{
+      margin-left: 3rem;
+      width: 200px;
+      height: 200px;
+    }
+    
+    .btn-outline-warning{
+      border-color:pink;
+      color:red;
+    }
+
+    label{
+      font-family: "Arial Black", Gadget, sans-serif;
+    color: #565656;
+    font-size: 18px;
+    }

@@ -1,0 +1,48 @@
+HTML of Furry Friend App
+
+<div id="app">
+	<h1>Meet Lisa's Furry Friends!</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-3 new">
+        <h3>Introdoce Lisa More Furry Friends!</h3>
+        <form @submit.prevent>
+          <input type="text" placeholder="name"  class="form-control" v-model="newName"> 
+          <input type="text" placeholder="type of animal"  class="form-control" v-model="newType">
+          <input type="text" placeholder="picture url here" class="form-control" v-model="newPic">
+          <br>
+          <button type="submit" type="button" class="btn btn-light submit" @click="createNew">Submit</button>
+        </form>
+      </div>
+      <div class="col-9">
+      
+     <!-- new code added on aug. 11th, the select bar feature-->
+        <!-- updatade on aug. 13th, capitalized the word after "value=" -->
+        <div class="filter">
+          <label>Furry Friends Filter:</label>
+           <br>
+          <select v-model="selectedAnimals">
+            <option value="">All Animals</option>
+            <!-- referred to here: https://www.c-sharpcorner.com/article/how-to-use-dropdown-and-radio-buttons-in-vue-js/
+ to learn-->
+            <option v-for="animal in animals" :value="animal.name">{{animal.name}}</option>
+             <!-- <option disabled>--</option>
+            <option value="Hamster">Hamster</option>
+          <option value="Cat">Cat</option>
+            <option value="Dog">Dog</option>
+            <option value="Squirrel"> Squirrel</option>
+            <option value="All">All</option>-->
+        </select>
+        </div> 
+        
+       <!--new code added on aug 11th ends here -->
+        <!-- the new code for the filter does not seem to work -->
+
+       <!--Update on aug 13th: Got help from Blake. The main fix is to change "aninimal in animals" to "animal in this.filteredAnimals"-->
+ 
+       <profile v-for="animal in this.filteredAnimals" :animal="animal">
+        <!-- change on aug 13th ends here -->   
+      </div>
+    </div>
+  </div>
+</div>
